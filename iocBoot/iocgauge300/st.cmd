@@ -7,7 +7,7 @@
 
 epicsEnvSet("PREFIX", "UWXRD:300s_gauge:")
 epicsEnvSet("PORT", "serial1")
-epicsEnvSet (STREAM_PROTOCOL_PATH, "$(TOP)/gauge300App/Db")
+epicsEnvSet (STREAM_PROTOCOL_PATH, "${TOP}/gauge300App/Db")
 
 ## Register all support components
 dbLoadDatabase "${TOP}/dbd/gauge300.dbd"
@@ -23,10 +23,9 @@ asynSetOption("serial1",0,"stop","1")
 asynSetOption("serial1",0,"parity","none")
 asynSetOption("serial1",0,"clocal","Y")
 asynSetOption("serial1",0,"crtscts","N")
-#asynSetTraceMask("serial1", 0, ERROR|DRIVER|FLOW)
 ## Load record instances
 #dbLoadRecords("db/xxx.db","user=uwchamber")
-dbLoadRecords("$(TOP)/gauge300App/Db/300s_gauge.db","P=$(PREFIX),PORT=serial1")
+dbLoadRecords("${TOP}/gauge300App/Db/300s_gauge.db","P=$(PREFIX),PORT=serial1")
 
 
 
