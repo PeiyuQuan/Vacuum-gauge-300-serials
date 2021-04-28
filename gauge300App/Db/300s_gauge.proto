@@ -1,5 +1,0 @@
-#300 series read pressure
-
-readpressure {out "#01RD"; in "*01 %f";}
-setspan {out "#01TS%E"; in "*01 PROGM OK";}
-setZero {out "#01TZ%E"; in "*01 PROGM OK";}
