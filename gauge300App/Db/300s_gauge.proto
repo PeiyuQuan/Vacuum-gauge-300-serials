@@ -1,0 +1,4 @@
+#300 series read pressure
+
+readpressure {out "#01RD"; in "*01 %f";}
+setspan {out "#01TS%3.2E"; in "*01 PROGM OK";}
