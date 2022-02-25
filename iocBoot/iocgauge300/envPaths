@@ -1,7 +1,0 @@
-epicsEnvSet("IOC","iocgauge300")
-epicsEnvSet("TOP","/home/uwchamber/epics/gauge300")
-epicsEnvSet("SUPPORT","/home/uwchamber/epics/synApps/support")
-epicsEnvSet("ASYN","/home/uwchamber/epics/synApps/support/asyn-master")
-epicsEnvSet("STREAM","/home/uwchamber/epics/synApps/support/StreamDevice-master")
-epicsEnvSet("CALC","/home/uwchamber/epics/synApps/support/calc-master")
-epicsEnvSet("EPICS_BASE","/home/uwchamber/epics/base")
