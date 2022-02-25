@@ -1,0 +1,26 @@
+record(ai,"$(P)$(M)readpressure")
+	{
+		field(DTYP,"stream")
+		field(INP,"@gauge300s.proto readpressure $(PORT)")
+		field(EGU,"Torr")
+		field(PREC,"2")
+		field(HOPR, "1000")
+		field(LOPR, "0.0001")
+		field(SCAN,"1 second")
+	}
+
+record(ao,"$(P)$(M)setspan")
+	{
+		field(DTYP,"stream")
+		field(OUT,"@gauge300s.proto setspan $(PORT)")
+		field(EGU,"Torr")
+		field(PREC,"2")
+	}
+  
+record(ao,"$(P)$(M)setZero")
+	{
+		field(DTYP,"stream")
+		field(OUT,"@gauge300s.proto setZero $(PORT)")
+		field(EGU,"Torr")
+		field(PREC,"2")
+	}

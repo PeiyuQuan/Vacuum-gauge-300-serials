@@ -1,0 +1,1 @@
+device(lsi,INST_IO,devgauge300Version,"gauge300 version")
