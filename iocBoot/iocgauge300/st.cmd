@@ -14,7 +14,7 @@ gauge300_registerRecordDeviceDriver pdbbase
 epicsEnvSet("STREAM_PROTOCOL_PATH","${TOP}/gauge300App/Db")
 epicsEnvSet("PREFIX", "SLAC:Gauge300s:")
 epicsEnvSet("PORT", "serial1")
-epicsEnvSet("M","kjlc1:")
+epicsEnvSet("M","kjl1:")
 
 ## Load record instances
 #drvAsynSerialPortConfigure("portName","ttyName",priority,noAutoConnect,noProcessEosIn)
