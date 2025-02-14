@@ -1,2 +1,2 @@
 # 300-serials-vacuum-gauge
-Please install EPICS Base, Asyn, stream, autosave and calc module before installed EPICS KJLC 300 serial Gauge.
+EPICS driver for KJLC 300 serials Gauge.
