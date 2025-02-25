@@ -55,7 +55,6 @@ gauge300_DBD += drvAsynSerialPort.dbd
 gauge300_DBD += calc.dbd
 gauge300_DBD += stream-scalcout.dbd
 gauge300_DBD += stream.dbd
-gauge300_DBD += as.dbd
 gauge300_DBD += asSupport.dbd
 # gauge300_registerRecordDeviceDriver.cpp derives from gauge300.dbd
 gauge300_SRCS += gauge300_registerRecordDeviceDriver.cpp
