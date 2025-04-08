@@ -1,0 +1,488 @@
+
+file {
+	name="/home/quan/adls/Gauge300s.adl"
+	version=030118
+}
+display {
+	object {
+		x=1134
+		y=304
+		width=310
+		height=400
+	}
+	clr=14
+	bclr=3
+	cmap=""
+	gridSpacing=5
+	gridOn=0
+	snapToGrid=0
+}
+"color map" {
+	ncolors=65
+	colors {
+		ffffff,
+		ececec,
+		dadada,
+		c8c8c8,
+		bbbbbb,
+		aeaeae,
+		9e9e9e,
+		919191,
+		858585,
+		787878,
+		696969,
+		5a5a5a,
+		464646,
+		2d2d2d,
+		000000,
+		00d800,
+		1ebb00,
+		339900,
+		2d7f00,
+		216c00,
+		fd0000,
+		de1309,
+		be190b,
+		a01207,
+		820400,
+		5893ff,
+		597ee1,
+		4b6ec7,
+		3a5eab,
+		27548d,
+		fbf34a,
+		f9da3c,
+		eeb62b,
+		e19015,
+		cd6100,
+		ffb0ff,
+		d67fe2,
+		ae4ebc,
+		8b1a96,
+		610a75,
+		a4aaff,
+		8793e2,
+		6a73c1,
+		4d52a4,
+		343386,
+		c7bb6d,
+		b79d5c,
+		a47e3c,
+		7d5627,
+		58340f,
+		99ffff,
+		73dfff,
+		4ea5f9,
+		2a63e4,
+		0a00b8,
+		ebf1b5,
+		d4db9d,
+		bbc187,
+		a6a462,
+		8b8239,
+		73ff6b,
+		52da3b,
+		3cb420,
+		289315,
+		1a7309,
+	}
+}
+text {
+	object {
+		x=10
+		y=100
+		width=120
+		height=15
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Set atmosphere"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=70
+		y=14
+		width=170
+		height=15
+	}
+	"basic attribute" {
+		clr=54
+	}
+	textix="300 Series Gauge 1"
+	align="horiz. centered"
+}
+"text entry" {
+	object {
+		x=135
+		y=100
+		width=120
+		height=20
+	}
+	control {
+		chan="$(P)$(M1)setspan"
+		clr=14
+		bclr=30
+	}
+	limits {
+	}
+}
+text {
+	object {
+		x=260
+		y=100
+		width=40
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Torr"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=10
+		y=45
+		width=120
+		height=15
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Read Pressure"
+	align="horiz. centered"
+}
+"text update" {
+	object {
+		x=140
+		y=40
+		width=120
+		height=20
+	}
+	monitor {
+		chan="$(P)$(M1)readpressure"
+		clr=14
+		bclr=30
+	}
+	align="horiz. centered"
+	limits {
+	}
+}
+text {
+	object {
+		x=260
+		y=43
+		width=40
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Torr"
+	align="horiz. centered"
+}
+"message button" {
+	object {
+		x=150
+		y=65
+		width=90
+		height=25
+	}
+	control {
+		chan="$(P)$(M1)setZero"
+		clr=14
+		bclr=20
+	}
+	label="set zero"
+	press_msg="1"
+}
+text {
+	object {
+		x=30
+		y=70
+		width=80
+		height=15
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Set Zero"
+}
+"message button" {
+	object {
+		x=150
+		y=188
+		width=90
+		height=25
+	}
+	control {
+		chan="$(P)$(M2)setZero"
+		clr=14
+		bclr=20
+	}
+	label="set zero"
+	press_msg="1"
+}
+text {
+	object {
+		x=33
+		y=188
+		width=80
+		height=15
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Set Zero"
+}
+text {
+	object {
+		x=10
+		y=218
+		width=120
+		height=15
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Set atmosphere"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=73
+		y=140
+		width=170
+		height=15
+	}
+	"basic attribute" {
+		clr=54
+	}
+	textix="300 Series Gauge 2"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=10
+		y=158
+		width=120
+		height=15
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Read Pressure"
+	align="horiz. centered"
+}
+"text update" {
+	object {
+		x=140
+		y=158
+		width=120
+		height=20
+	}
+	monitor {
+		chan="$(P)$(M2)readpressure"
+		clr=14
+		bclr=30
+	}
+	align="horiz. centered"
+	limits {
+	}
+}
+text {
+	object {
+		x=260
+		y=158
+		width=40
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Torr"
+	align="horiz. centered"
+}
+"text entry" {
+	object {
+		x=140
+		y=218
+		width=120
+		height=20
+	}
+	control {
+		chan="$(P)$(M2)setspan"
+		clr=14
+		bclr=30
+	}
+	limits {
+	}
+}
+text {
+	object {
+		x=260
+		y=218
+		width=40
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Torr"
+	align="horiz. centered"
+}
+"message button" {
+	object {
+		x=150
+		y=322
+		width=90
+		height=25
+	}
+	control {
+		chan="$(P)$(M3)setZero"
+		clr=14
+		bclr=20
+	}
+	label="set zero"
+	press_msg="1"
+}
+text {
+	object {
+		x=34
+		y=322
+		width=80
+		height=15
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Set Zero"
+}
+text {
+	object {
+		x=10
+		y=352
+		width=120
+		height=15
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Set atmosphere"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=74
+		y=270
+		width=170
+		height=15
+	}
+	"basic attribute" {
+		clr=54
+	}
+	textix="300 Series Gauge 3"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=10
+		y=292
+		width=120
+		height=15
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Read Pressure"
+	align="horiz. centered"
+}
+"text update" {
+	object {
+		x=135
+		y=292
+		width=120
+		height=20
+	}
+	monitor {
+		chan="$(P)$(M3)readpressure"
+		clr=14
+		bclr=30
+	}
+	align="horiz. centered"
+	limits {
+	}
+}
+text {
+	object {
+		x=260
+		y=292
+		width=40
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Torr"
+	align="horiz. centered"
+}
+"text entry" {
+	object {
+		x=140
+		y=352
+		width=120
+		height=20
+	}
+	control {
+		chan="$(P)$(M3)setspan"
+		clr=14
+		bclr=30
+	}
+	limits {
+	}
+}
+text {
+	object {
+		x=265
+		y=352
+		width=40
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Torr"
+	align="horiz. centered"
+}
+polyline {
+	object {
+		x=0
+		y=130
+		width=312
+		height=0
+	}
+	"basic attribute" {
+		clr=14
+	}
+	points {
+		(0,130)
+		(312,130)
+	}
+}
+polyline {
+	object {
+		x=0
+		y=255
+		width=312
+		height=0
+	}
+	"basic attribute" {
+		clr=14
+	}
+	points {
+		(0,255)
+		(312,255)
+	}
+}
