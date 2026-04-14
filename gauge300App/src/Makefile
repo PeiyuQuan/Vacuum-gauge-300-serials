@@ -53,7 +53,7 @@ gauge300_DBD += asyn.dbd
 gauge300_DBD += drvAsynIPPort.dbd
 gauge300_DBD += drvAsynSerialPort.dbd
 gauge300_DBD += calc.dbd
-gauge300_DBD += stream-scalcout.dbd
+#gauge300_DBD += stream-scalcout.dbd
 gauge300_DBD += stream.dbd
 gauge300_DBD += asSupport.dbd
 # gauge300_registerRecordDeviceDriver.cpp derives from gauge300.dbd
