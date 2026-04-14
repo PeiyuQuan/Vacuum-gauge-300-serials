@@ -28,8 +28,6 @@ asynSetOption("serial1",0,"clocal","Y")
 asynSetOption("serial1",0,"crtscts","N")
 
 dbLoadRecords("${TOP}/gauge300App/Db/gauge300s.db","P=$(PREFIX),M=kjl1:,PORT=serial1")
-#dbLoadRecords("${TOP}/gauge300App/Db/gauge300s.db","P=$(PREFIX),M=kjl2:,PORT=serial1")
-#dbLoadRecords("${TOP}/gauge300App/Db/gauge300s.db","P=$(PREFIX),M=kjl3:,PORT=serial1")
 dbLoadRecords ("$(ASYN)/db/asynRecord.db", "P=$(PREFIX), R=asyn1, PORT=serial1, ADDR=0, IMAX=80, OMAX=80")
 dbLoadRecords ("$(AUTOSAVE)/db/save_restoreStatus.db", "P=$(PREFIX)")
 
